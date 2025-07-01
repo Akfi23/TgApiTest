@@ -4,13 +4,13 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const logger = require('./src/bot/utils/logger');
-const startAttachController = require('./src/bot/controllers/startAttachController');
-const paymentController = require('./src/bot/controllers/paymentCallbacksController');
+const logger = require('./bot/utils/logger');
+const startAttachController = require('./bot/controllers/startAttachController');
+const paymentController = require('./bot/controllers/paymentCallbacksController');
 
-const authRoutes = require('./src/api/routers/authRoutes');
-const paymentRoutes = require('./src/api/routers/paymentRoutes');
-const generalRoutes = require('./src/api/routers/generalRoutes');
+const authRoutes = require('./api/routers/authRoutes');
+const paymentRoutes = require('./api/routers/paymentRoutes');
+const generalRoutes = require('./api/routers/generalRoutes');
 
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
